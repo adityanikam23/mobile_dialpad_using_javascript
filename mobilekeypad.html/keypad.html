@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile calling keypad using javascript</title>
+    <style>
+        * {
+            text-transform: capitalize;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #maindiv {
+            border: 2px solid black;
+            height: 618px;
+            width: 25%;
+            margin: auto;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #screen {
+            background-color: white;
+            height: 250px;
+            color: black;
+            text-align: right;
+            padding-top: 200px;
+            padding-right: 20px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        button {
+            padding: 15px;
+            width: 100%;
+            font-size: large;
+            font-weight: 600;
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        }
+
+        #keypad {
+            display: flex;
+            /* display: none; */
+            /* visibility: hidden; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #mykeypad{
+            visibility: collapse;
+        }
+        .keypad1 {
+            flex: 3;
+        }
+
+        .keypad2 {
+            flex: 3;
+        }
+
+        .keypad3 {
+            flex: 3;
+        }
+        /* #lastkeypad{
+            display: flex;
+        } */
+        .sim1{
+            /* flex: 2; */
+            margin: 10px;
+            width: 100%;
+          
+        }
+        /* .sim2{
+            flex: 2;
+            margin: 10px;
+        } */
+        .btn{
+            background-color: green;
+            color: white;
+            border: 0;
+            padding: 10px;
+            font-weight: 600;
+            border-radius: 10px;
+            text-transform: uppercase;
+          
+        }
+        .dialpad{
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid ;
+            font-weight: 600;
+          
+        }
+        #top{
+            border-bottom: 2px solid black;
+            height: 25px;
+            text-align: center;
+        }
+        #show{
+            display: none;
+            border: 0;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #end{
+            padding: 10px;
+            display: none;
+            border-radius: 10px;
+            border: 0;
+        }
+        #bgcolor{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>mobile calling keypad</h1>
+    <div id="maindiv">
+            <div id="top">
+                <p>7:01 PM</p>
+            </div>
+        <div id="screen">
+             
+        </div>
+        <div id="mykeypad">
+            <div id="keypad">
+                <div class="keypad1">
+                   <button onclick="one()" type="button">1</button>
+                </div>
+                <div class="keypad2">
+                    <button onclick="two()" type="button">2</button>
+                </div>
+                <div class="keypad3">
+                    <button onclick="three()" type="button">3</button>
+                </div>
+            </div>
+
+
+            <script>
+                  function one(){
+                    document.getElementById("screen").innerHTML += "1";
+                    document.getElementById("screen").style.fontSize = "30px";
+                  }
+                  function two(){
+                    document.getElementById("screen").innerHTML += "2";
+                    document.getElementById("screen").style.fontSize = "30px";
+                  }
+                  function three(){
+                    document.getElementById("screen").innerHTML += "3";
+                    document.getElementById("screen").style.fontSize = "30px";
+                  }
+            </script>
+
+            <div id="keypad">
+                <div class="keypad1">
+                    <button onclick="four()" type="button">4</button>
+                </div>
+                <div class="keypad2">
+                    <button onclick="five()" type="button">5</button>
+                </div>
+                <div class="keypad3">
+                    <button onclick="six()" type="button">6</button>
+                </div>
+            </div>
+
+            <script>
+                function four(){
+                  document.getElementById("screen").innerHTML += "4";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function five(){
+                  document.getElementById("screen").innerHTML += "5";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function six(){
+                  document.getElementById("screen").innerHTML += "6";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+          </script>
+
+            <div id="keypad">
+                <div class="keypad1">
+                    <button onclick="seven()" type="button">7</button>
+                </div>
+                <div class="keypad2">
+                    <button onclick="eight()" type="button">8</button>
+                </div>
+                <div class="keypad3">
+                    <button onclick="nine()" type="button">9</button>
+                </div>
+            </div>
+
+
+            <script>
+                function seven(){
+                  document.getElementById("screen").innerHTML += "7";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function eight(){
+                  document.getElementById("screen").innerHTML += "8";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function nine(){
+                  document.getElementById("screen").innerHTML += "9";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+          </script>
+
+
+            <div id="keypad">
+                <div class="keypad1">
+                    <button onclick="star()" type="button">*</button>
+                </div>
+                <div class="keypad2">
+                    <button onclick="zero()" type="button">0</button>
+                </div>
+                <div class="keypad3">
+                    <button onclick="hash()" type="button">#</button>
+                </div>
+            </div>
+
+
+
+            <script>
+                function star(){
+                  document.getElementById("screen").innerHTML += "*";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function zero(){
+                  document.getElementById("screen").innerHTML += "0";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+                function hash(){
+                  document.getElementById("screen").innerHTML += "#";
+                  document.getElementById("screen").style.fontSize = "30px";
+                }
+          </script>
+
+            <div id="keypad">
+                <div class="sim1">
+                    <a href="tel:+"><button onclick="call()" id="bgcolor" class="btn" type="button">call</button></a>
+
+                    <button type="button" onclick="ended()" id="show">call end</button>
+
+
+                    <button type="button" id="end">call ended</button>
+                   
+                </div>
+
+
+
+                <script>
+                    function call(){
+                    //   document.getElementById("screen").innerHTML += "";
+                      document.getElementById("screen").style.backgroundColor = "black";
+                      document.getElementById("bgcolor").style.display = "none"
+                      document.getElementById("show").style.display = "block";
+                      document.getElementById("show").style.backgroundColor = "red";
+                      document.getElementById("show").style.color = "white";
+                    }
+                    function ended(){
+                      document.getElementById("show").style.display = "none";
+                      document.getElementById("end").style.display = "block";
+                      document.getElementById("end").style.backgroundColor = "red";
+                      document.getElementById("end").style.color = "white";
+                      document.getElementById("hide").style.display = "block";
+                      document.getElementById("maindiv").style.height = "618px";
+                    //   document.getElementById("end").style.display = "none";
+                    // document.getElementById("bgcolor").style.display = "block";
+                    }
+              </script>
+
+
+                <!-- <div class="sim2">
+                    <button class="btn" type="button">sim2</button>
+                </div>
+               -->
+            </div>
+        </div>
+        <button onclick="dial()" id="hide" class="dialpad" type="button">dialpad</button>
+
+        <script>
+            function dial(){
+                document.getElementById("mykeypad").style.visibility = "visible";
+                document.getElementById("hide").style.display = "none";
+                document.getElementById("maindiv").style.height = "580px";
+            }
+        </script>
+    </div>
+
+
+   
+</body>
+
+</html>
